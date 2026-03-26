@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: fhe-secure-agent
+Version: 0.1.0
+Summary: GPU-accelerated FHE security layer for any LLM agent — any NVIDIA GPU
+Author: Sam Frazer-Dutton
+Requires-Python: >=3.11
+Requires-Dist: numpy
+Provides-Extra: cuda12
+Requires-Dist: cupy-cuda12x; extra == "cuda12"
+Provides-Extra: cuda11
+Requires-Dist: cupy-cuda11x; extra == "cuda11"
+Dynamic: author
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

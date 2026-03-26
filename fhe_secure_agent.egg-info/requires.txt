@@ -1,0 +1,7 @@
+numpy
+
+[cuda11]
+cupy-cuda11x
+
+[cuda12]
+cupy-cuda12x
