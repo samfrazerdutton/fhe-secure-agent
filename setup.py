@@ -4,11 +4,13 @@ setup(
     name="fhe-secure-agent",
     version="0.1.0",
     author="Sam Frazer-Dutton",
-    description="GPU-accelerated FHE security layer for any LLM agent",
+    description="GPU-accelerated FHE security layer for any LLM agent — any NVIDIA GPU",
     packages=find_packages(),
+    package_data={"src": ["kernels/*.ptx"]},
     python_requires=">=3.11",
-    install_requires=[
-        "numpy",
-        "cupy-cuda12x",
-    ],
+    install_requires=["numpy"],
+    extras_require={
+        "cuda12": ["cupy-cuda12x"],
+        "cuda11": ["cupy-cuda11x"],
+    },
 )
